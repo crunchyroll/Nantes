@@ -24,12 +24,6 @@ final class NantesLabelAccessibilityElement: UIAccessibilityElement {
 }
 
 extension NantesLabel {
-    override open var isAccessibilityElement: Bool {
-        get {
-            return false
-        } set { }
-    }
-
     func configureAccessibilityElements() {
         guard attributedText != nil else {
             _accessibilityElements = nil
